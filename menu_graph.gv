@@ -1,0 +1,102 @@
+digraph {
+  subgraph cluster_0 {
+    label="Журналы";
+
+    style=filled;
+    fillcolor=azure2;
+    color=azure4;
+    node [style=filled,color=gray10, fillcolor=white];
+
+    "Сотрудники";
+    "Подразделения";
+    "Задачи ИТ/АХО";
+    "Приказы";
+    "Рабочий календарь";
+    "Отделы по Юр. формам";
+    "Договоры подряда";
+    "Трудовые договоры";
+
+    subgraph cluster_1 {
+      label="NauPhone";
+
+      color=azure4;
+      node [style=filled];
+
+      "ЕКБ";
+      "Москва";
+      "Сотовые номера";
+    }
+
+    "Грейды / Категории";
+    "Шаблоны кадровых документов";
+    "Надбавки (ГК)";
+  }
+
+  subgraph cluster_2 {
+    label="UserController";
+
+    "Сотрудники" -> {"UserController#index" [label=index]};
+    "Шаблоны кадровых документов" -> {"UserController#hr_files" [label=hr_files]};
+  }
+
+  subgraph cluster_3 {
+      label="ReportController";
+      Подразделения -> hr;
+  }
+
+  subgraph cluster_4 {
+      label="RequestOptionsController";
+      "Задачи ИТ/АХО" -> list_tasks;
+  }
+
+  subgraph cluster_5 {
+      label="HrOrderController";
+      "Приказы" -> {"HrOrderController#index" [label=index]};
+  }
+
+  subgraph cluster_6 {
+      label="WorkCalendarController";
+      "Рабочий календарь" -> {"WorkCalendarController#index" [label=index]};
+  }
+
+  subgraph cluster_7 {
+        label="Division2d1Controller";
+        "Отделы по Юр. формам" -> {"Division2d1Controller#index" [label=index]};
+    }
+
+  subgraph cluster_8 {
+      label="TContractController";
+      "Договоры подряда" -> {"TContractController#index" [label=index]};
+  }
+
+  subgraph cluster_9 {
+      label="WorkContractController";
+      "Трудовые договоры" -> {"WorkContractController#index" [label=index]};
+  }
+
+  subgraph cluster_10 {
+      label="Nauphone";
+
+      "ЕКБ" -> {"Nauphone#list_ekb" [label=list_ekb]};
+      "Москва" -> {"Nauphone#list_msk" [label=list_msk]};
+      "Сотовые номера" -> {"Nauphone#mobile" [label=mobile]};
+  }
+
+  subgraph cluster_11 {
+      label="GradeCategoryController";
+      "Грейды / Категории" -> {"GradeCategoryController#index" [label=index]};
+  }
+
+    subgraph cluster_12 {
+        label="FeeDocController";
+
+        style=filled;
+        fillcolor=darkkhaki;
+        color=darkolivegreen;
+        node [style=filled,color=gray10, fillcolor=white];
+
+
+        "Надбавки (ГК)" -> {"FeeDocController#index" [label=index]};
+    }
+
+}
