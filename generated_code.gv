@@ -1,1 +1,159 @@
-[{:name=>"Журналы", :level=>1.0, :controller=>nil, :action=>nil, :id=>1, :parent_id=>0}, {:name=>"Сотрудники ", :level=>2.0, :controller=>"UserController", :action=>"index", :id=>2, :parent_id=>1}, {:name=>"Подразделения", :level=>2.0, :controller=>"ReportController", :action=>"hr", :id=>3, :parent_id=>1}, {:name=>"Задачи ИТ/АХО", :level=>2.0, :controller=>"RequestOptionsController", :action=>"list_tasks", :id=>4, :parent_id=>1}, {:name=>"Приказы", :level=>2.0, :controller=>"HrOrderController", :action=>"index", :id=>5, :parent_id=>1}, {:name=>"Рабочий календарь", :level=>2.0, :controller=>"WorkCalendarController", :action=>"index", :id=>6, :parent_id=>1}, {:name=>"Отделы по юр. формам", :level=>2.0, :controller=>"Division2d1Controller", :action=>"index", :id=>7, :parent_id=>1}, {:name=>"Договоры подряда", :level=>2.0, :controller=>"TContractController", :action=>"index", :id=>8, :parent_id=>1}, {:name=>"Трудовые договоры", :level=>2.0, :controller=>"WorkContractController", :action=>"index", :id=>9, :parent_id=>1}, {:name=>"NauPhone", :level=>2.0, :controller=>nil, :action=>nil, :id=>10, :parent_id=>1}, {:name=>"ЕКБ", :level=>3.0, :controller=>"NauphoneController", :action=>"list_ekb", :id=>11, :parent_id=>10}, {:name=>"Москва", :level=>3.0, :controller=>"NauphoneController", :action=>"list_msk", :id=>12, :parent_id=>10}, {:name=>"Сотовые номера", :level=>3.0, :controller=>"NauphoneController", :action=>"mobile", :id=>13, :parent_id=>10}, {:name=>"Грейды / Категории", :level=>2.0, :controller=>"GradeCategoryController", :action=>"index", :id=>14, :parent_id=>1}, {:name=>"Шаблоны кадровых документов", :level=>2.0, :controller=>"UserController", :action=>"hr_files", :id=>15, :parent_id=>1}, {:name=>"Надбавки (ГК)", :level=>2.0, :controller=>"FeeDocController", :action=>"index", :id=>16, :parent_id=>1}, {:name=>"Отчеты", :level=>1.0, :controller=>nil, :action=>nil, :id=>17, :parent_id=>0}, {:name=>"Сотрудники (фото)", :level=>2.0, :controller=>"UserController", :action=>"all", :id=>18, :parent_id=>17}, {:name=>"PR", :level=>2.0, :controller=>nil, :action=>nil, :id=>19, :parent_id=>17}, {:name=>"Анкеты самооценки", :level=>1.0, :controller=>"PrQuestionController", :action=>"index", :id=>20, :parent_id=>0}, {:name=>"Результаты", :level=>1.0, :controller=>"ReportController", :action=>"pr_results", :id=>21, :parent_id=>0}, {:name=>"Мои результаты", :level=>1.0, :controller=>"PrResultsController", :action=>"index", :id=>22, :parent_id=>0}, {:name=>"Графики", :level=>1.0, :controller=>"ReportController", :action=>"pr_reports", :id=>23, :parent_id=>0}, {:name=>"Отчет по анкетам", :level=>1.0, :controller=>"ReportController", :action=>"pr_ankets", :id=>24, :parent_id=>0}, {:name=>"Отчет по протоколам PR", :level=>1.0, :controller=>"ReportController", :action=>"pr_protocols", :id=>25, :parent_id=>0}, {:name=>"Сотрудники с годом \nработы в компании", :level=>2.0, :controller=>"ReportController", :action=>"work_year_user", :id=>26, :parent_id=>25}, {:name=>"Отчет для IT", :level=>2.0, :controller=>"ReportController", :action=>"f_it", :id=>27, :parent_id=>25}, {:name=>"Образование", :level=>2.0, :controller=>"ReportController", :action=>"users_company_report", :id=>28, :parent_id=>25}, {:name=>"Обучение", :level=>2.0, :controller=>"ReportController", :action=>"user_training", :id=>29, :parent_id=>25}, {:name=>"Отчет по уведомлениям", :level=>2.0, :controller=>"ReportController", :action=>"email_log", :id=>30, :parent_id=>25}, {:name=>"Аналитика по ЗП", :level=>2.0, :controller=>"ReportController", :action=>"pp_users_repirt", :id=>31, :parent_id=>25}, {:name=>"Статистика по сотрудникам", :level=>2.0, :controller=>"ReportController", :action=>"all_report_users", :id=>32, :parent_id=>25}, {:name=>"Сотрудники со стажем \nработы от одного года", :level=>2.0, :controller=>"ReportController", :action=>"experience_juridicals", :id=>33, :parent_id=>25}, {:name=>"Юбилеи сотрудников", :level=>2.0, :controller=>"ReportController", :action=>"anniversary", :id=>34, :parent_id=>25}, {:name=>"Отчет по возрасту сотрудников", :level=>2.0, :controller=>"ReportController", :action=>"users_y", :id=>35, :parent_id=>25}, {:name=>"Отчет по площадям", :level=>2.0, :controller=>"LocationController", :action=>"report", :id=>36, :parent_id=>25}, {:name=>"Учет рабочего времени, невыходы", :level=>2.0, :controller=>nil, :action=>"all", :id=>37, :parent_id=>25}, {:name=>"Табель", :level=>3.0, :controller=>"UserTabelController", :action=>"all", :id=>38, :parent_id=>37}, {:name=>"Неполная рабочая неделя", :level=>3.0, :controller=>"UserWorkConditionController", :action=>"info", :id=>39, :parent_id=>37}, {:name=>"Начальные остатки по отпускам", :level=>3.0, :controller=>"VacationLogController", :action=>"report", :id=>40, :parent_id=>37}, {:name=>"Кол-во дней отпуска по годам", :level=>3.0, :controller=>"UserTabelController", :action=>"count_otgul_days", :id=>41, :parent_id=>37}, {:name=>"Отчет по отгулам и отпускам", :level=>3.0, :controller=>"VacationLogController", :action=>"report", :id=>42, :parent_id=>37}, {:name=>"Отчет по отпускам", :level=>3.0, :controller=>"VacationController", :action=>"report", :id=>43, :parent_id=>37}, {:name=>"Учетные данные", :level=>2.0, :controller=>nil, :action=>nil, :id=>44, :parent_id=>25}, {:name=>"Отчет по \"кредитам\"", :level=>3.0, :controller=>"ReportController", :action=>"credits", :id=>45, :parent_id=>44}, {:name=>"Полисы", :level=>3.0, :controller=>"UserPoliceController", :action=>"index", :id=>46, :parent_id=>44}, {:name=>"Отчет по грейдам", :level=>3.0, :controller=>"ReportController", :action=>"grades", :id=>47, :parent_id=>44}, {:name=>"Отчет по грейдам2", :level=>3.0, :controller=>"ReportController", :action=>"grades", :id=>48, :parent_id=>44}, {:name=>"Численность сотрудников", :level=>2.0, :controller=>nil, :action=>nil, :id=>49, :parent_id=>25}, {:name=>"Кол-во сотрудников \nпо юр. формам на дату", :level=>3.0, :controller=>"ReportController", :action=>"user_count", :id=>50, :parent_id=>49}, {:name=>"Среднесписочная численность \nработников по ЦФО и локации", :level=>3.0, :controller=>"AverageUsersReportsController", :action=>"average_number_of_workers", :id=>51, :parent_id=>49}, {:name=>"Среднесписочные отклонения \nмежду ЦФО \n(по рапортам проектного портала)", :level=>3.0, :controller=>"AverageUsersReportsController", :action=>"project_cfos", :id=>52, :parent_id=>49}, {:name=>"Среднесписочная численность \nработников по ЦФО и локации \nс учетом отклонений", :level=>3.0, :controller=>"AverageUsersReportsController", :action=>"average_users", :id=>53, :parent_id=>49}, {:name=>"Штатное расписание", :level=>2.0, :controller=>nil, :action=>nil, :id=>54, :parent_id=>25}, {:name=>"Оргструктура", :level=>3.0, :controller=>"ReportController", :action=>"orgstruct", :id=>55, :parent_id=>54}, {:name=>"Шт. расписание", :level=>3.0, :controller=>"StaffItemController", :action=>"index", :id=>56, :parent_id=>54}, {:name=>"Сравнение шт. рассписания", :level=>3.0, :controller=>"ReportController", :action=>"user_now_history", :id=>57, :parent_id=>54}, {:name=>"Штатная расстановка \nорганизации", :level=>3.0, :controller=>"division2d1Controller", :action=>"list_of_staff_rasstanovka", :id=>58, :parent_id=>54}, {:name=>"Отчет по новым \nштатным единицам \nс заполненной з/п", :level=>3.0, :controller=>"StaffItemLogController", :action=>"index", :id=>59, :parent_id=>54}, {:name=>"Отчет по всем \nштатным единицам \nс заполненной з/п", :level=>3.0, :controller=>"StaffItemLogController", :action=>"all", :id=>60, :parent_id=>54}, {:name=>"Испытательный срок", :level=>2.0, :controller=>"ReportController", :action=>"trial", :id=>61, :parent_id=>25}, {:name=>"Общий аналитический отчет", :level=>2.0, :controller=>"ReportController", :action=>"index", :id=>62, :parent_id=>25}, {:name=>"Стаж работы сотрудников по городам", :level=>2.0, :controller=>"ReportController", :action=>"user_cities", :id=>63, :parent_id=>25}, {:name=>"Сотрудники по должностям", :level=>2.0, :controller=>"ReportController", :action=>"count_user_by_pos", :id=>64, :parent_id=>25}, {:name=>"Кол-во сотрудников в офисах", :level=>2.0, :controller=>"LocationController", :action=>"report_by_sex", :id=>65, :parent_id=>25}, {:name=>"Надбавки", :level=>2.0, :controller=>"SalaryIncrementController", :action=>"index", :id=>66, :parent_id=>25}, {:name=>"Заявления", :level=>1.0, :controller=>nil, :action=>nil, :id=>67, :parent_id=>0}, {:name=>"Ваши заявления", :level=>2.0, :controller=>"UserRequestController", :action=>"index", :id=>68, :parent_id=>67}, {:name=>"Заявления на отгул, \nпереработку, \nвыход из отпуска", :level=>2.0, :controller=>"UserRequestController", :action=>"otgul_list", :id=>69, :parent_id=>67}, {:name=>"Поданные заявления", :level=>2.0, :controller=>"UserRequestController", :action=>"report", :id=>70, :parent_id=>67}, {:name=>"Заявления для HR и Фин. отдела", :level=>2.0, :controller=>"UserRequestController", :action=>"index", :id=>71, :parent_id=>67}, {:name=>"Заявления в АХО", :level=>2.0, :controller=>"UserRequestController", :action=>"index", :id=>72, :parent_id=>67}, {:name=>"Создать протокол PR", :level=>2.0, :controller=>"PrProtocolController", :action=>"new", :id=>73, :parent_id=>67}, {:name=>"Анкеты самооценки", :level=>2.0, :controller=>"PrQuestionController", :action=>"index", :id=>74, :parent_id=>67}, {:name=>"Справочники", :level=>1.0, :controller=>nil, :action=>nil, :id=>75, :parent_id=>0}, {:name=>"ЦФО", :level=>2.0, :controller=>"CfoController", :action=>"index", :id=>76, :parent_id=>75}, {:name=>"Бюджеты", :level=>2.0, :controller=>"BudgetController", :action=>"index", :id=>77, :parent_id=>75}, {:name=>"Отделы", :level=>2.0, :controller=>"DivisionController", :action=>"index", :id=>78, :parent_id=>75}, {:name=>"Города", :level=>2.0, :controller=>"CityController", :action=>"index", :id=>79, :parent_id=>75}, {:name=>"Местоположения", :level=>2.0, :controller=>"LocationController", :action=>"index", :id=>80, :parent_id=>75}, {:name=>"Юр. формы", :level=>2.0, :controller=>"JuridicalController", :action=>"index", :id=>81, :parent_id=>75}, {:name=>"Должности", :level=>2.0, :controller=>"PositionController", :action=>"index", :id=>82, :parent_id=>75}, {:name=>"Служебные лестницы", :level=>2.0, :controller=>"WorkingTypeController", :action=>"index", :id=>83, :parent_id=>75}, {:name=>"Грейды", :level=>2.0, :controller=>"GradeTabelController", :action=>"index", :id=>84, :parent_id=>75}, {:name=>"Коэффициенты стоимости часа", :level=>2.0, :controller=>"HourPriceCoefficientController", :action=>"index", :id=>85, :parent_id=>75}, {:name=>"Вузы и факультеты", :level=>2.0, :controller=>"EducationController", :action=>"index", :id=>86, :parent_id=>75}, {:name=>"Типы ”Кредитов”", :level=>2.0, :controller=>"CreditTypeController", :action=>"index", :id=>87, :parent_id=>75}, {:name=>"Причины отсутствия", :level=>2.0, :controller=>"TabelTypeController", :action=>"index", :id=>88, :parent_id=>75}, {:name=>"Причины перевода", :level=>2.0, :controller=>"ReasonController", :action=>"index", :id=>89, :parent_id=>75}, {:name=>"Основание прекращения", :level=>2.0, :controller=>"OsnPrekrController", :action=>"index", :id=>90, :parent_id=>75}, {:name=>"Дети", :level=>2.0, :controller=>"ChildrenEmployeeController", :action=>"index", :id=>91, :parent_id=>75}, {:name=>"Роли", :level=>2.0, :controller=>"RoleController", :action=>"list", :id=>92, :parent_id=>75}, {:name=>"Комнаты", :level=>2.0, :controller=>"RoomController", :action=>"index", :id=>93, :parent_id=>75}, {:name=>"Рассылки компаний", :level=>2.0, :controller=>"MailListController", :action=>"index", :id=>94, :parent_id=>75}, {:name=>"Мед. учреждения", :level=>2.0, :controller=>"MedicalInstitutionController", :action=>"index", :id=>95, :parent_id=>75}, {:name=>"Инф. системы компании", :level=>2.0, :controller=>"InfSystemsController", :action=>"index", :id=>96, :parent_id=>75}, {:name=>"Опции для заявлений", :level=>2.0, :controller=>"RequestOptionsController", :action=>"index", :id=>97, :parent_id=>75}, {:name=>"Специальности", :level=>2.0, :controller=>"SpecialityController", :action=>"index", :id=>98, :parent_id=>75}, {:name=>"Доверенности", :level=>2.0, :controller=>"HrOrderController", :action=>"trust_sign_persons", :id=>99, :parent_id=>75}, {:name=>"Отделы по Юр. формам", :level=>2.0, :controller=>"Division2Controller", :action=>"index", :id=>100, :parent_id=>75}, {:name=>"Настройки", :level=>1.0, :controller=>nil, :action=>nil, :id=>101, :parent_id=>0}, {:name=>"Цвет", :level=>2.0, :controller=>"UserController", :action=>"color", :id=>102, :parent_id=>101}, {:name=>"Email-рассылки", :level=>2.0, :controller=>"DeliveryEmailController", :action=>"index", :id=>103, :parent_id=>101}, {:name=>"Назначение ролей", :level=>2.0, :controller=>"RoleController", :action=>"setup", :id=>104, :parent_id=>101}, {:name=>"Назначение ролей на отчеты", :level=>2.0, :controller=>"UserController", :action=>"user_role_reports", :id=>105, :parent_id=>101}, {:name=>"Назначение сотрудников \nопций ИТ/АХО", :level=>2.0, :controller=>"ResOfOptsController", :action=>"index", :id=>106, :parent_id=>101}, {:name=>"Назначение пользователей \nв рассылку напоминаний", :level=>2.0, :controller=>"EmailsForNotifyController", :action=>"index", :id=>107, :parent_id=>101}, {:name=>"Закрытие табеля на изменение", :level=>2.0, :controller=>"CloseTabelController", :action=>"index", :id=>108, :parent_id=>101}, {:name=>"Шт. расписание", :level=>1.0, :controller=>"Division2d1Controller", :action=>"list_of_staff", :id=>109, :parent_id=>0}]
+digraph {
+
+  subgraph cluster_1 {
+    label="Журналы";
+    "Сотрудники ";
+    "Подразделения";
+    "Задачи ИТ/АХО";
+    "Приказы";
+    "Рабочий календарь";
+    "Отделы по юр. формам";
+    "Договоры подряда";
+    "Трудовые договоры";
+
+    subgraph cluster_10 {
+      label="NauPhone";
+      "ЕКБ";
+      "Москва";
+      "Сотовые номера";
+    }
+
+    "Грейды / Категории";
+    "Шаблоны кадровых документов";
+    "Надбавки (ГК)";
+  }
+
+
+  subgraph cluster_17 {
+    label="Отчеты";
+    "Сотрудники (фото)";
+
+    subgraph cluster_19 {
+      label="PR";
+      "Анкеты самооценки";
+      "Результаты";
+      "Мои результаты";
+      "Графики";
+      "Отчет по анкетам";
+      "Отчет по протоколам PR";
+    }
+
+    "Сотрудники с годом работы в компании";
+    "Отчет для IT";
+    "Образование";
+    "Обучение";
+    "Отчет по уведомлениям";
+    "Аналитика по ЗП";
+    "Статистика по сотрудникам";
+    "Сотрудники со стажем работы от одного года";
+    "Юбилеи сотрудников";
+    "Отчет по возрасту сотрудников";
+    "Отчет по площадям";
+
+    subgraph cluster_37 {
+      label="Учет рабочего времени, невыходы";
+      "Табель";
+      "Неполная рабочая неделя";
+      "Начальные остатки по отпускам";
+      "Кол-во дней отпуска по годам";
+      "Отчет по отгулам и отпускам";
+      "Отчет по отпускам";
+    }
+
+
+    subgraph cluster_44 {
+      label="Учетные данные";
+      "Отчет по "кредитам"";
+      "Полисы";
+      "Отчет по грейдам";
+      "Отчет по грейдам2";
+    }
+
+
+    subgraph cluster_49 {
+      label="Численность сотрудников";
+      "Кол-во сотрудников по юр. формам на дату";
+      "Среднесписочная численность работников по ЦФО и локации";
+      "Среднесписочные отклонения между ЦФО (по рапортам проектного портала)";
+      "Среднесписочная численность работников по ЦФО и локации с учетом отклонений";
+    }
+
+
+    subgraph cluster_54 {
+      label="Штатное расписание";
+      "Оргструктура";
+      "Шт. расписание";
+      "Сравнение шт. рассписания";
+      "Штатная расстановка организации";
+      "Отчет по новым штатным единицам с заполненной з/п";
+      "Отчет по всем штатным единицам с заполненной з/п";
+    }
+
+    "Испытательный срок";
+    "Общий аналитический отчет";
+    "Стаж работы сотрудников по городам";
+    "Сотрудники по должностям";
+    "Кол-во сотрудников в офисах";
+    "Надбавки";
+  }
+
+
+  subgraph cluster_67 {
+    label="Заявления";
+    "Ваши заявления";
+    "Заявления на отгул, переработку, выход из отпуска";
+    "Поданные заявления";
+    "Заявления для HR и Фин. отдела";
+    "Заявления в АХО";
+    "Создать протокол PR";
+    "Анкеты самооценки";
+  }
+
+
+  subgraph cluster_75 {
+    label="Справочники";
+    "ЦФО";
+    "Бюджеты";
+    "Отделы";
+    "Города";
+    "Местоположения";
+    "Юр. формы";
+    "Должности";
+    "Служебные лестницы";
+    "Грейды";
+    "Коэффициенты стоимости часа";
+    "Вузы и факультеты";
+    "Типы ”Кредитов”";
+    "Причины отсутствия";
+    "Причины перевода";
+    "Основание прекращения";
+    "Дети";
+    "Роли";
+    "Комнаты";
+    "Рассылки компаний";
+    "Мед. учреждения";
+    "Инф. системы компании";
+    "Опции для заявлений";
+    "Специальности";
+    "Доверенности";
+    "Отделы по Юр. формам";
+  }
+
+
+  subgraph cluster_101 {
+    label="Настройки";
+    "Цвет";
+    "Email-рассылки";
+    "Назначение ролей";
+    "Назначение ролей на отчеты";
+    "Назначение сотрудников опций ИТ/АХО";
+    "Назначение пользователей в рассылку напоминаний";
+    "Закрытие табеля на изменение";
+  }
+
+
+  subgraph cluster_109 {
+    label="Шт. расписание";
+  }
+
+}

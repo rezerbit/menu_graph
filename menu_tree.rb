@@ -1,6 +1,6 @@
 class MenuTree
 
-  attr_accessor :children, :name, :level, :controller, :action, :id, :parent_id
+  attr_accessor :childrens, :name, :level, :controller, :action, :id, :parent_id
 
   def initialize(attr={})
     @name = attr[:name]
@@ -10,6 +10,6 @@ class MenuTree
     @id = attr[:id]
     @parent_id = attr[:parent_id]
 
-    @children = []
+    @childrens = []
   end
 end
