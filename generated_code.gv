@@ -1,6 +1,11 @@
 digraph {
+rank=same;rankdir=RL; 
 
   subgraph cluster_1 {
+    style=filled;
+    fillcolor=azure2;
+    olor=azure4;
+    node [style=filled,color=gray10, fillcolor=white, shape=box];
     label="Журналы";
     "Сотрудники ";
     "Подразделения";
@@ -12,6 +17,10 @@ digraph {
     "Трудовые договоры";
 
     subgraph cluster_10 {
+      style=filled;
+      fillcolor=azure2;
+      olor=azure4;
+      node [style=filled,color=gray10, fillcolor=white, shape=box];
       label="NauPhone";
       "ЕКБ";
       "Москва";
@@ -25,10 +34,18 @@ digraph {
 
 
   subgraph cluster_17 {
+    style=filled;
+    fillcolor=azure2;
+    olor=azure4;
+    node [style=filled,color=gray10, fillcolor=white, shape=box];
     label="Отчеты";
     "Сотрудники (фото)";
 
     subgraph cluster_19 {
+      style=filled;
+      fillcolor=azure2;
+      olor=azure4;
+      node [style=filled,color=gray10, fillcolor=white, shape=box];
       label="PR";
       "Анкеты самооценки";
       "Результаты";
@@ -51,6 +68,10 @@ digraph {
     "Отчет по площадям";
 
     subgraph cluster_37 {
+      style=filled;
+      fillcolor=azure2;
+      olor=azure4;
+      node [style=filled,color=gray10, fillcolor=white, shape=box];
       label="Учет рабочего времени, невыходы";
       "Табель";
       "Неполная рабочая неделя";
@@ -62,8 +83,12 @@ digraph {
 
 
     subgraph cluster_44 {
+      style=filled;
+      fillcolor=azure2;
+      olor=azure4;
+      node [style=filled,color=gray10, fillcolor=white, shape=box];
       label="Учетные данные";
-      "Отчет по "кредитам"";
+      "Отчет по 'кредитам'";
       "Полисы";
       "Отчет по грейдам";
       "Отчет по грейдам2";
@@ -71,6 +96,10 @@ digraph {
 
 
     subgraph cluster_49 {
+      style=filled;
+      fillcolor=azure2;
+      olor=azure4;
+      node [style=filled,color=gray10, fillcolor=white, shape=box];
       label="Численность сотрудников";
       "Кол-во сотрудников по юр. формам на дату";
       "Среднесписочная численность работников по ЦФО и локации";
@@ -80,6 +109,10 @@ digraph {
 
 
     subgraph cluster_54 {
+      style=filled;
+      fillcolor=azure2;
+      olor=azure4;
+      node [style=filled,color=gray10, fillcolor=white, shape=box];
       label="Штатное расписание";
       "Оргструктура";
       "Шт. расписание";
@@ -99,6 +132,10 @@ digraph {
 
 
   subgraph cluster_67 {
+    style=filled;
+    fillcolor=azure2;
+    olor=azure4;
+    node [style=filled,color=gray10, fillcolor=white, shape=box];
     label="Заявления";
     "Ваши заявления";
     "Заявления на отгул, переработку, выход из отпуска";
@@ -111,6 +148,10 @@ digraph {
 
 
   subgraph cluster_75 {
+    style=filled;
+    fillcolor=azure2;
+    olor=azure4;
+    node [style=filled,color=gray10, fillcolor=white, shape=box];
     label="Справочники";
     "ЦФО";
     "Бюджеты";
@@ -141,6 +182,10 @@ digraph {
 
 
   subgraph cluster_101 {
+    style=filled;
+    fillcolor=azure2;
+    olor=azure4;
+    node [style=filled,color=gray10, fillcolor=white, shape=box];
     label="Настройки";
     "Цвет";
     "Email-рассылки";
@@ -153,7 +198,577 @@ digraph {
 
 
   subgraph cluster_109 {
+    style=filled;
+    fillcolor=azure2;
+    olor=azure4;
+    node [style=filled,color=gray10, fillcolor=white, shape=box];
     label="Шт. расписание";
   }
+
+
+subgraph cluster_1001 {
+label="UserController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Сотрудники " -> {"UserController#index" [label=index]}
+"Шаблоны кадровых документов" -> {"UserController#hr_files" [label=hr_files]}
+"Сотрудники (фото)" -> {"UserController#all" [label=all]}
+"Цвет" -> {"UserController#color" [label=color]}
+"Назначение ролей на отчеты" -> {"UserController#user_role_reports" [label=user_role_reports]}
+}
+
+
+subgraph cluster_1002 {
+label="ReportController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Подразделения" -> {"ReportController#hr" [label=hr]}
+"Результаты" -> {"ReportController#pr_results" [label=pr_results]}
+"Графики" -> {"ReportController#pr_reports" [label=pr_reports]}
+"Отчет по анкетам" -> {"ReportController#pr_ankets" [label=pr_ankets]}
+"Отчет по протоколам PR" -> {"ReportController#pr_protocols" [label=pr_protocols]}
+"Сотрудники с годом работы в компании" -> {"ReportController#work_year_user" [label=work_year_user]}
+"Отчет для IT" -> {"ReportController#f_it" [label=f_it]}
+"Образование" -> {"ReportController#users_company_report" [label=users_company_report]}
+"Обучение" -> {"ReportController#user_training" [label=user_training]}
+"Отчет по уведомлениям" -> {"ReportController#email_log" [label=email_log]}
+"Аналитика по ЗП" -> {"ReportController#pp_users_repirt" [label=pp_users_repirt]}
+"Статистика по сотрудникам" -> {"ReportController#all_report_users" [label=all_report_users]}
+"Сотрудники со стажем работы от одного года" -> {"ReportController#experience_juridicals" [label=experience_juridicals]}
+"Юбилеи сотрудников" -> {"ReportController#anniversary" [label=anniversary]}
+"Отчет по возрасту сотрудников" -> {"ReportController#users_y" [label=users_y]}
+"Отчет по 'кредитам'" -> {"ReportController#credits" [label=credits]}
+"Отчет по грейдам" -> {"ReportController#grades" [label=grades]}
+"Отчет по грейдам2" -> {"ReportController#grades" [label=grades]}
+"Кол-во сотрудников по юр. формам на дату" -> {"ReportController#user_count" [label=user_count]}
+"Оргструктура" -> {"ReportController#orgstruct" [label=orgstruct]}
+"Сравнение шт. рассписания" -> {"ReportController#user_now_history" [label=user_now_history]}
+"Испытательный срок" -> {"ReportController#trial" [label=trial]}
+"Общий аналитический отчет" -> {"ReportController#index" [label=index]}
+"Стаж работы сотрудников по городам" -> {"ReportController#user_cities" [label=user_cities]}
+"Сотрудники по должностям" -> {"ReportController#count_user_by_pos" [label=count_user_by_pos]}
+}
+
+
+subgraph cluster_1003 {
+label="RequestOptionsController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Задачи ИТ/АХО" -> {"RequestOptionsController#list_tasks" [label=list_tasks]}
+"Опции для заявлений" -> {"RequestOptionsController#index" [label=index]}
+}
+
+
+subgraph cluster_1004 {
+label="HrOrderController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Приказы" -> {"HrOrderController#index" [label=index]}
+"Доверенности" -> {"HrOrderController#trust_sign_persons" [label=trust_sign_persons]}
+}
+
+
+subgraph cluster_1005 {
+label="WorkCalendarController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Рабочий календарь" -> {"WorkCalendarController#index" [label=index]}
+}
+
+
+subgraph cluster_1006 {
+label="Division2d1Controller";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Отделы по юр. формам" -> {"Division2d1Controller#index" [label=index]}
+"Шт. расписание" -> {"Division2d1Controller#list_of_staff" [label=list_of_staff]}
+}
+
+
+subgraph cluster_1007 {
+label="TContractController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Договоры подряда" -> {"TContractController#index" [label=index]}
+}
+
+
+subgraph cluster_1008 {
+label="WorkContractController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Трудовые договоры" -> {"WorkContractController#index" [label=index]}
+}
+
+
+subgraph cluster_1010 {
+label="NauphoneController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"ЕКБ" -> {"NauphoneController#list_ekb" [label=list_ekb]}
+"Москва" -> {"NauphoneController#list_msk" [label=list_msk]}
+"Сотовые номера" -> {"NauphoneController#mobile" [label=mobile]}
+}
+
+
+subgraph cluster_1013 {
+label="GradeCategoryController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Грейды / Категории" -> {"GradeCategoryController#index" [label=index]}
+}
+
+
+subgraph cluster_1015 {
+label="FeeDocController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Надбавки (ГК)" -> {"FeeDocController#index" [label=index]}
+}
+
+
+subgraph cluster_1019 {
+label="PrQuestionController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Анкеты самооценки" -> {"PrQuestionController#index" [label=index]}
+"Анкеты самооценки" -> {"PrQuestionController#index" [label=index]}
+}
+
+
+subgraph cluster_1021 {
+label="PrResultsController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Мои результаты" -> {"PrResultsController#index" [label=index]}
+}
+
+
+subgraph cluster_1035 {
+label="LocationController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Отчет по площадям" -> {"LocationController#report" [label=report]}
+"Кол-во сотрудников в офисах" -> {"LocationController#report_by_sex" [label=report_by_sex]}
+"Местоположения" -> {"LocationController#index" [label=index]}
+}
+
+
+subgraph cluster_1037 {
+label="UserTabelController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Табель" -> {"UserTabelController#all" [label=all]}
+"Кол-во дней отпуска по годам" -> {"UserTabelController#count_otgul_days" [label=count_otgul_days]}
+}
+
+
+subgraph cluster_1038 {
+label="UserWorkConditionController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Неполная рабочая неделя" -> {"UserWorkConditionController#info" [label=info]}
+}
+
+
+subgraph cluster_1039 {
+label="VacationLogController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Начальные остатки по отпускам" -> {"VacationLogController#report" [label=report]}
+"Отчет по отгулам и отпускам" -> {"VacationLogController#report" [label=report]}
+}
+
+
+subgraph cluster_1042 {
+label="VacationController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Отчет по отпускам" -> {"VacationController#report" [label=report]}
+}
+
+
+subgraph cluster_1045 {
+label="UserPoliceController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Полисы" -> {"UserPoliceController#index" [label=index]}
+}
+
+
+subgraph cluster_1050 {
+label="AverageUsersReportsController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Среднесписочная численность работников по ЦФО и локации" -> {"AverageUsersReportsController#average_number_of_workers" [label=average_number_of_workers]}
+"Среднесписочные отклонения между ЦФО (по рапортам проектного портала)" -> {"AverageUsersReportsController#project_cfos" [label=project_cfos]}
+"Среднесписочная численность работников по ЦФО и локации с учетом отклонений" -> {"AverageUsersReportsController#average_users" [label=average_users]}
+}
+
+
+subgraph cluster_1055 {
+label="StaffItemController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Шт. расписание" -> {"StaffItemController#index" [label=index]}
+}
+
+
+subgraph cluster_1057 {
+label="division2d1Controller";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Штатная расстановка организации" -> {"division2d1Controller#list_of_staff_rasstanovka" [label=list_of_staff_rasstanovka]}
+}
+
+
+subgraph cluster_1058 {
+label="StaffItemLogController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Отчет по новым штатным единицам с заполненной з/п" -> {"StaffItemLogController#index" [label=index]}
+"Отчет по всем штатным единицам с заполненной з/п" -> {"StaffItemLogController#all" [label=all]}
+}
+
+
+subgraph cluster_1065 {
+label="SalaryIncrementController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Надбавки" -> {"SalaryIncrementController#index" [label=index]}
+}
+
+
+subgraph cluster_1067 {
+label="UserRequestController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Ваши заявления" -> {"UserRequestController#index" [label=index]}
+"Заявления на отгул, переработку, выход из отпуска" -> {"UserRequestController#otgul_list" [label=otgul_list]}
+"Поданные заявления" -> {"UserRequestController#report" [label=report]}
+"Заявления для HR и Фин. отдела" -> {"UserRequestController#index" [label=index]}
+"Заявления в АХО" -> {"UserRequestController#index" [label=index]}
+}
+
+
+subgraph cluster_1072 {
+label="PrProtocolController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Создать протокол PR" -> {"PrProtocolController#new" [label=new]}
+}
+
+
+subgraph cluster_1075 {
+label="CfoController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"ЦФО" -> {"CfoController#index" [label=index]}
+}
+
+
+subgraph cluster_1076 {
+label="BudgetController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Бюджеты" -> {"BudgetController#index" [label=index]}
+}
+
+
+subgraph cluster_1077 {
+label="DivisionController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Отделы" -> {"DivisionController#index" [label=index]}
+}
+
+
+subgraph cluster_1078 {
+label="CityController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Города" -> {"CityController#index" [label=index]}
+}
+
+
+subgraph cluster_1080 {
+label="JuridicalController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Юр. формы" -> {"JuridicalController#index" [label=index]}
+}
+
+
+subgraph cluster_1081 {
+label="PositionController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Должности" -> {"PositionController#index" [label=index]}
+}
+
+
+subgraph cluster_1082 {
+label="WorkingTypeController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Служебные лестницы" -> {"WorkingTypeController#index" [label=index]}
+}
+
+
+subgraph cluster_1083 {
+label="GradeTabelController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Грейды" -> {"GradeTabelController#index" [label=index]}
+}
+
+
+subgraph cluster_1084 {
+label="HourPriceCoefficientController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Коэффициенты стоимости часа" -> {"HourPriceCoefficientController#index" [label=index]}
+}
+
+
+subgraph cluster_1085 {
+label="EducationController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Вузы и факультеты" -> {"EducationController#index" [label=index]}
+}
+
+
+subgraph cluster_1086 {
+label="CreditTypeController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Типы ”Кредитов”" -> {"CreditTypeController#index" [label=index]}
+}
+
+
+subgraph cluster_1087 {
+label="TabelTypeController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Причины отсутствия" -> {"TabelTypeController#index" [label=index]}
+}
+
+
+subgraph cluster_1088 {
+label="ReasonController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Причины перевода" -> {"ReasonController#index" [label=index]}
+}
+
+
+subgraph cluster_1089 {
+label="OsnPrekrController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Основание прекращения" -> {"OsnPrekrController#index" [label=index]}
+}
+
+
+subgraph cluster_1090 {
+label="ChildrenEmployeeController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Дети" -> {"ChildrenEmployeeController#index" [label=index]}
+}
+
+
+subgraph cluster_1091 {
+label="RoleController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Роли" -> {"RoleController#list" [label=list]}
+"Назначение ролей" -> {"RoleController#setup" [label=setup]}
+}
+
+
+subgraph cluster_1092 {
+label="RoomController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Комнаты" -> {"RoomController#index" [label=index]}
+}
+
+
+subgraph cluster_1093 {
+label="MailListController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Рассылки компаний" -> {"MailListController#index" [label=index]}
+}
+
+
+subgraph cluster_1094 {
+label="MedicalInstitutionController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Мед. учреждения" -> {"MedicalInstitutionController#index" [label=index]}
+}
+
+
+subgraph cluster_1095 {
+label="InfSystemsController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Инф. системы компании" -> {"InfSystemsController#index" [label=index]}
+}
+
+
+subgraph cluster_1097 {
+label="SpecialityController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Специальности" -> {"SpecialityController#index" [label=index]}
+}
+
+
+subgraph cluster_1099 {
+label="Division2Controller";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Отделы по Юр. формам" -> {"Division2Controller#index" [label=index]}
+}
+
+
+subgraph cluster_1102 {
+label="DeliveryEmailController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Email-рассылки" -> {"DeliveryEmailController#index" [label=index]}
+}
+
+
+subgraph cluster_1105 {
+label="ResOfOptsController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Назначение сотрудников опций ИТ/АХО" -> {"ResOfOptsController#index" [label=index]}
+}
+
+
+subgraph cluster_1106 {
+label="EmailsForNotifyController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Назначение пользователей в рассылку напоминаний" -> {"EmailsForNotifyController#index" [label=index]}
+}
+
+
+subgraph cluster_1107 {
+label="CloseTabelController";
+style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];
+"Закрытие табеля на изменение" -> {"CloseTabelController#index" [label=index]}
+}
 
 }

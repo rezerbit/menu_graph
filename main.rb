@@ -58,28 +58,6 @@ p menu.childrens.map(&:name)
 
 
 
-
-
-
-
-subgraph_tree = SubgraphTree.new(label: 'root')
-
-
-
-def create_subgraph_tree(menu, subgraph_tree)
-  menu.childrens.each do |m|
-    s = SubgraphTree.new(label: m.name, id: m.id, parent_id: m.parent_id)
-    subgraph_tree.childrens << s
-    create_subgraph_tree(m, s)
-  end
-  subgraph_tree
-end
-
-# p create_subgraph_tree(menu, subgraph_tree).childrens[0].childrens.map(&:label)
-
-
-
-
 def create_text(menu)
   text = ''
   menu.childrens.each do |m|
@@ -96,10 +74,87 @@ def create_text(menu)
   text
 end
 
-text = "digraph {\n"
-text += create_text(menu)
+
+
+
+def create_controllers(rows)
+  controllers = []
+  rows.each_with_index do |r, i|
+    next if r[:controller].nil?
+    contr = controllers.select { |c| c[:controller] == r[:controller] }.first
+    if contr.nil?
+      controllers << { controller: r[:controller], id: i + 1000, actions: [{ action: r[:action], name: r[:name] }] }
+    else
+      contr[:actions] << { action: r[:action], name: r[:name] }
+    end
+  end
+  controllers
+end
+
+controllers = create_controllers(rows)
+p controllers
+
+
+
+
+def create_subgraph_controller(menu)
+  text = ''
+  menu.childrens.each do |m|
+    text += if m.childrens.empty? && m.level != 1
+              "  " * m.level.to_i + "\"#{m.name}\";\n"
+            else
+              "\n" +
+
+              "  " * m.level.to_i + "subgraph cluster_#{m.id} {\n" +
+              "  " * m.level.to_i + '  ' + "style=filled;\n" +
+              "  " * m.level.to_i + '  ' + "fillcolor=azure2;\n" +
+              "  " * m.level.to_i + '  ' + "olor=azure4;\n" +
+              "  " * m.level.to_i + '  ' + "node [style=filled,color=gray10, fillcolor=white, shape=box];\n" +
+
+              "  " * m.level.to_i + '  ' + "label=\"#{m.name}\";\n" +
+              create_subgraph_controller(m) +
+              "  " * m.level.to_i + "}\n\n"
+            end
+  end
+  text
+end
+
+
+
+
+text = "digraph {\n" +
+       "rank=same;" +
+      "rankdir=RL; \n"
+
+text += create_subgraph_controller(menu)
+
+controllers.each do |c|
+  text += "\n" +
+          "subgraph cluster_#{c[:id]} {\n" +
+          "label=\"#{c[:controller]}\";\n" +
+      "style=filled;
+  fillcolor=darkkhaki;
+  color=darkolivegreen;
+  node [style=filled,color=gray10, fillcolor=white];\n"
+
+
+  c[:actions].each do |action|
+    action[:action]
+    text += "\"#{action[:name]}\" -> {\"#{c[:controller]}##{action[:action]}\" [label=#{action[:action]}]}\n"
+  end
+
+  text += "}\n\n"
+
+end
+
+
+
 text += '}'
+
+
 File.open("generated_code.gv", 'w') {|f| f.write(text) }
 
 
-`dot -Tpng -Tgif ~/projects/menu_graph/generated_code.gv -o ~/projects/menu_graph/menu_graph.png > /dev/null`
+
+`dot -Tpng ~/projects/menu_graph/generated_code.gv -o ~/projects/menu_graph/menu_graph.png > /dev/null`
+
