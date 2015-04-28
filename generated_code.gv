@@ -4,7 +4,7 @@ rank=same;rankdir=RL;
   subgraph cluster_1 {
     style=filled;
     fillcolor=azure2;
-    olor=azure4;
+    color=azure4;
     node [style=filled,color=gray10, fillcolor=white, shape=box];
     label="Журналы";
     "Сотрудники ";
@@ -19,7 +19,7 @@ rank=same;rankdir=RL;
     subgraph cluster_10 {
       style=filled;
       fillcolor=azure2;
-      olor=azure4;
+      color=azure4;
       node [style=filled,color=gray10, fillcolor=white, shape=box];
       label="NauPhone";
       "ЕКБ";
@@ -36,7 +36,7 @@ rank=same;rankdir=RL;
   subgraph cluster_17 {
     style=filled;
     fillcolor=azure2;
-    olor=azure4;
+    color=azure4;
     node [style=filled,color=gray10, fillcolor=white, shape=box];
     label="Отчеты";
     "Сотрудники (фото)";
@@ -44,7 +44,7 @@ rank=same;rankdir=RL;
     subgraph cluster_19 {
       style=filled;
       fillcolor=azure2;
-      olor=azure4;
+      color=azure4;
       node [style=filled,color=gray10, fillcolor=white, shape=box];
       label="PR";
       "Анкеты самооценки";
@@ -55,78 +55,124 @@ rank=same;rankdir=RL;
       "Отчет по протоколам PR";
     }
 
-    "Сотрудники с годом работы в компании";
+    "Сотрудники с годом 
+работы в компании";
     "Отчет для IT";
     "Образование";
     "Обучение";
-    "Отчет по уведомлениям";
+    "Отчет 
+по уведомлениям";
     "Аналитика по ЗП";
-    "Статистика по сотрудникам";
-    "Сотрудники со стажем работы от одного года";
+    "Статистика 
+по сотрудникам";
+    "Сотрудники 
+со стажем работы 
+от одного года";
     "Юбилеи сотрудников";
-    "Отчет по возрасту сотрудников";
-    "Отчет по площадям";
+    "Отчет 
+по возрасту 
+сотрудников";
+    "Отчет 
+по площадям";
 
     subgraph cluster_37 {
       style=filled;
       fillcolor=azure2;
-      olor=azure4;
+      color=azure4;
       node [style=filled,color=gray10, fillcolor=white, shape=box];
-      label="Учет рабочего времени, невыходы";
+      label="Учет рабочего времени, 
+невыходы";
       "Табель";
-      "Неполная рабочая неделя";
-      "Начальные остатки по отпускам";
-      "Кол-во дней отпуска по годам";
-      "Отчет по отгулам и отпускам";
-      "Отчет по отпускам";
+      "Неполная 
+рабочая неделя";
+      "Начальные остатки 
+по отпускам";
+      "Кол-во дней 
+отпуска по годам";
+      "Отчет по отгулам 
+и отпускам";
+      "Отчет 
+по отпускам";
     }
 
 
     subgraph cluster_44 {
       style=filled;
       fillcolor=azure2;
-      olor=azure4;
+      color=azure4;
       node [style=filled,color=gray10, fillcolor=white, shape=box];
       label="Учетные данные";
-      "Отчет по 'кредитам'";
+      "Отчет 
+по 'кредитам'";
       "Полисы";
-      "Отчет по грейдам";
-      "Отчет по грейдам2";
+      "Отчет 
+по грейдам";
+      "Отчет 
+по грейдам2";
     }
 
 
     subgraph cluster_49 {
       style=filled;
       fillcolor=azure2;
-      olor=azure4;
+      color=azure4;
       node [style=filled,color=gray10, fillcolor=white, shape=box];
-      label="Численность сотрудников";
-      "Кол-во сотрудников по юр. формам на дату";
-      "Среднесписочная численность работников по ЦФО и локации";
-      "Среднесписочные отклонения между ЦФО (по рапортам проектного портала)";
-      "Среднесписочная численность работников по ЦФО и локации с учетом отклонений";
+      label="Численность 
+сотрудников";
+      "Кол-во сотрудников 
+по юр. формам 
+на дату";
+      "Среднесписочная 
+численность 
+работников 
+по ЦФО и локации";
+      "Среднесписочные 
+отклонения 
+между ЦФО 
+(по рапортам 
+проектного портала)";
+      "Среднесписочная 
+численность 
+работников 
+по ЦФО и локации 
+с учетом отклонений";
     }
 
 
     subgraph cluster_54 {
       style=filled;
       fillcolor=azure2;
-      olor=azure4;
+      color=azure4;
       node [style=filled,color=gray10, fillcolor=white, shape=box];
       label="Штатное расписание";
       "Оргструктура";
-      "Шт. расписание";
-      "Сравнение шт. рассписания";
-      "Штатная расстановка организации";
-      "Отчет по новым штатным единицам с заполненной з/п";
-      "Отчет по всем штатным единицам с заполненной з/п";
+      "Шт-е расписание";
+      "Сравнение 
+шт. рассписания";
+      "Штатная 
+расстановка 
+организации";
+      "Отчет 
+по новым 
+штатным единицам 
+с заполненной з/п";
+      "Отчет по всем 
+штатным единицам 
+с заполненной з/п";
     }
 
-    "Испытательный срок";
-    "Общий аналитический отчет";
-    "Стаж работы сотрудников по городам";
-    "Сотрудники по должностям";
-    "Кол-во сотрудников в офисах";
+    "Испытательный 
+срок";
+    "Общий 
+аналитический 
+отчет";
+    "Стаж работы 
+сотрудников 
+по городам";
+    "Сотрудники 
+по должностям";
+    "Кол-во сотрудников 
+в офисах";
     "Надбавки";
   }
 
@@ -134,23 +180,31 @@ rank=same;rankdir=RL;
   subgraph cluster_67 {
     style=filled;
     fillcolor=azure2;
-    olor=azure4;
+    color=azure4;
     node [style=filled,color=gray10, fillcolor=white, shape=box];
     label="Заявления";
     "Ваши заявления";
-    "Заявления на отгул, переработку, выход из отпуска";
-    "Поданные заявления";
-    "Заявления для HR и Фин. отдела";
+    "Заявления 
+на отгул, 
+переработку, 
+выход из отпуска";
+    "Поданные 
+заявления";
+    "Заявления 
+для HR 
+и Фин. отдела";
     "Заявления в АХО";
-    "Создать протокол PR";
-    "Анкеты самооценки";
+    "Создать 
+протокол PR";
+    "Анкеты 
+самооценки";
   }
 
 
   subgraph cluster_75 {
     style=filled;
     fillcolor=azure2;
-    olor=azure4;
+    color=azure4;
     node [style=filled,color=gray10, fillcolor=white, shape=box];
     label="Справочники";
     "ЦФО";
@@ -160,49 +214,66 @@ rank=same;rankdir=RL;
     "Местоположения";
     "Юр. формы";
     "Должности";
-    "Служебные лестницы";
+    "Служебные 
+лестницы";
     "Грейды";
-    "Коэффициенты стоимости часа";
-    "Вузы и факультеты";
+    "Коэффициенты 
+стоимости часа";
+    "Вузы 
+и факультеты";
     "Типы ”Кредитов”";
-    "Причины отсутствия";
+    "Причины 
+отсутствия";
     "Причины перевода";
-    "Основание прекращения";
+    "Основание 
+прекращения";
     "Дети";
     "Роли";
     "Комнаты";
-    "Рассылки компаний";
+    "Рассылки 
+компаний";
     "Мед. учреждения";
-    "Инф. системы компании";
-    "Опции для заявлений";
+    "Инф. системы 
+компании";
+    "Опции 
+для заявлений";
     "Специальности";
     "Доверенности";
-    "Отделы по Юр. формам";
+    "Отделы 
+по Юр. формам";
   }
 
 
   subgraph cluster_101 {
     style=filled;
     fillcolor=azure2;
-    olor=azure4;
+    color=azure4;
     node [style=filled,color=gray10, fillcolor=white, shape=box];
     label="Настройки";
     "Цвет";
     "Email-рассылки";
-    "Назначение ролей";
-    "Назначение ролей на отчеты";
-    "Назначение сотрудников опций ИТ/АХО";
-    "Назначение пользователей в рассылку напоминаний";
-    "Закрытие табеля на изменение";
+    "Назначение 
+ролей";
+    "Назначение 
+ролей на отчеты";
+    "Назначение 
+сотрудников 
+опций ИТ/АХО";
+    "Назначение 
+пользователей 
+в рассылку 
+напоминаний";
+    "Закрытие табеля 
+на изменение";
   }
 
 
   subgraph cluster_109 {
     style=filled;
     fillcolor=azure2;
-    olor=azure4;
+    color=azure4;
     node [style=filled,color=gray10, fillcolor=white, shape=box];
-    label="Шт. расписание";
+  "Шт. расписание";
   }
 
 
@@ -216,7 +287,8 @@ style=filled;
 "Шаблоны кадровых документов" -> {"UserController#hr_files" [label=hr_files]}
 "Сотрудники (фото)" -> {"UserController#all" [label=all]}
 "Цвет" -> {"UserController#color" [label=color]}
-"Назначение ролей на отчеты" -> {"UserController#user_role_reports" [label=user_role_reports]}
+"Назначение 
+ролей на отчеты" -> {"UserController#user_role_reports" [label=user_role_reports]}
 }
 
 
@@ -231,26 +303,45 @@ style=filled;
 "Графики" -> {"ReportController#pr_reports" [label=pr_reports]}
 "Отчет по анкетам" -> {"ReportController#pr_ankets" [label=pr_ankets]}
 "Отчет по протоколам PR" -> {"ReportController#pr_protocols" [label=pr_protocols]}
-"Сотрудники с годом работы в компании" -> {"ReportController#work_year_user" [label=work_year_user]}
+"Сотрудники с годом 
+работы в компании" -> {"ReportController#work_year_user" [label=work_year_user]}
 "Отчет для IT" -> {"ReportController#f_it" [label=f_it]}
 "Образование" -> {"ReportController#users_company_report" [label=users_company_report]}
 "Обучение" -> {"ReportController#user_training" [label=user_training]}
-"Отчет по уведомлениям" -> {"ReportController#email_log" [label=email_log]}
+"Отчет 
+по уведомлениям" -> {"ReportController#email_log" [label=email_log]}
 "Аналитика по ЗП" -> {"ReportController#pp_users_repirt" [label=pp_users_repirt]}
-"Статистика по сотрудникам" -> {"ReportController#all_report_users" [label=all_report_users]}
-"Сотрудники со стажем работы от одного года" -> {"ReportController#experience_juridicals" [label=experience_juridicals]}
+"Статистика 
+по сотрудникам" -> {"ReportController#all_report_users" [label=all_report_users]}
+"Сотрудники 
+со стажем работы 
+от одного года" -> {"ReportController#experience_juridicals" [label=experience_juridicals]}
 "Юбилеи сотрудников" -> {"ReportController#anniversary" [label=anniversary]}
-"Отчет по возрасту сотрудников" -> {"ReportController#users_y" [label=users_y]}
-"Отчет по 'кредитам'" -> {"ReportController#credits" [label=credits]}
-"Отчет по грейдам" -> {"ReportController#grades" [label=grades]}
-"Отчет по грейдам2" -> {"ReportController#grades" [label=grades]}
-"Кол-во сотрудников по юр. формам на дату" -> {"ReportController#user_count" [label=user_count]}
+"Отчет 
+по возрасту 
+сотрудников" -> {"ReportController#users_y" [label=users_y]}
+"Отчет 
+по 'кредитам'" -> {"ReportController#credits" [label=credits]}
+"Отчет 
+по грейдам" -> {"ReportController#grades" [label=grades]}
+"Отчет 
+по грейдам2" -> {"ReportController#grades" [label=grades]}
+"Кол-во сотрудников 
+по юр. формам 
+на дату" -> {"ReportController#user_count" [label=user_count]}
 "Оргструктура" -> {"ReportController#orgstruct" [label=orgstruct]}
-"Сравнение шт. рассписания" -> {"ReportController#user_now_history" [label=user_now_history]}
-"Испытательный срок" -> {"ReportController#trial" [label=trial]}
-"Общий аналитический отчет" -> {"ReportController#index" [label=index]}
-"Стаж работы сотрудников по городам" -> {"ReportController#user_cities" [label=user_cities]}
-"Сотрудники по должностям" -> {"ReportController#count_user_by_pos" [label=count_user_by_pos]}
+"Сравнение 
+шт. рассписания" -> {"ReportController#user_now_history" [label=user_now_history]}
+"Испытательный 
+срок" -> {"ReportController#trial" [label=trial]}
+"Общий 
+аналитический 
+отчет" -> {"ReportController#index" [label=index]}
+"Стаж работы 
+сотрудников 
+по городам" -> {"ReportController#user_cities" [label=user_cities]}
+"Сотрудники 
+по должностям" -> {"ReportController#count_user_by_pos" [label=count_user_by_pos]}
 }
 
 
@@ -261,7 +352,8 @@ style=filled;
   color=darkolivegreen;
   node [style=filled,color=gray10, fillcolor=white];
 "Задачи ИТ/АХО" -> {"RequestOptionsController#list_tasks" [label=list_tasks]}
-"Опции для заявлений" -> {"RequestOptionsController#index" [label=index]}
+"Опции 
+для заявлений" -> {"RequestOptionsController#index" [label=index]}
 }
 
 
@@ -356,7 +448,8 @@ style=filled;
   color=darkolivegreen;
   node [style=filled,color=gray10, fillcolor=white];
 "Анкеты самооценки" -> {"PrQuestionController#index" [label=index]}
-"Анкеты самооценки" -> {"PrQuestionController#index" [label=index]}
+"Анкеты 
+самооценки" -> {"PrQuestionController#index" [label=index]}
 }
 
 
@@ -376,8 +469,10 @@ style=filled;
   fillcolor=darkkhaki;
   color=darkolivegreen;
   node [style=filled,color=gray10, fillcolor=white];
-"Отчет по площадям" -> {"LocationController#report" [label=report]}
-"Кол-во сотрудников в офисах" -> {"LocationController#report_by_sex" [label=report_by_sex]}
+"Отчет 
+по площадям" -> {"LocationController#report" [label=report]}
+"Кол-во сотрудников 
+в офисах" -> {"LocationController#report_by_sex" [label=report_by_sex]}
 "Местоположения" -> {"LocationController#index" [label=index]}
 }
 
@@ -389,7 +484,8 @@ style=filled;
   color=darkolivegreen;
   node [style=filled,color=gray10, fillcolor=white];
 "Табель" -> {"UserTabelController#all" [label=all]}
-"Кол-во дней отпуска по годам" -> {"UserTabelController#count_otgul_days" [label=count_otgul_days]}
+"Кол-во дней 
+отпуска по годам" -> {"UserTabelController#count_otgul_days" [label=count_otgul_days]}
 }
 
 
@@ -399,7 +495,8 @@ style=filled;
   fillcolor=darkkhaki;
   color=darkolivegreen;
   node [style=filled,color=gray10, fillcolor=white];
-"Неполная рабочая неделя" -> {"UserWorkConditionController#info" [label=info]}
+"Неполная 
+рабочая неделя" -> {"UserWorkConditionController#info" [label=info]}
 }
 
 
@@ -409,8 +506,10 @@ style=filled;
   fillcolor=darkkhaki;
   color=darkolivegreen;
   node [style=filled,color=gray10, fillcolor=white];
-"Начальные остатки по отпускам" -> {"VacationLogController#report" [label=report]}
-"Отчет по отгулам и отпускам" -> {"VacationLogController#report" [label=report]}
+"Начальные остатки 
+по отпускам" -> {"VacationLogController#report" [label=report]}
+"Отчет по отгулам 
+и отпускам" -> {"VacationLogController#report" [label=report]}
 }
 
 
@@ -420,7 +519,8 @@ style=filled;
   fillcolor=darkkhaki;
   color=darkolivegreen;
   node [style=filled,color=gray10, fillcolor=white];
-"Отчет по отпускам" -> {"VacationController#report" [label=report]}
+"Отчет 
+по отпускам" -> {"VacationController#report" [label=report]}
 }
 
 
@@ -440,9 +540,20 @@ style=filled;
   fillcolor=darkkhaki;
   color=darkolivegreen;
   node [style=filled,color=gray10, fillcolor=white];
-"Среднесписочная численность работников по ЦФО и локации" -> {"AverageUsersReportsController#average_number_of_workers" [label=average_number_of_workers]}
-"Среднесписочные отклонения между ЦФО (по рапортам проектного портала)" -> {"AverageUsersReportsController#project_cfos" [label=project_cfos]}
-"Среднесписочная численность работников по ЦФО и локации с учетом отклонений" -> {"AverageUsersReportsController#average_users" [label=average_users]}
+"Среднесписочная 
+численность 
+работников 
+по ЦФО и локации" -> {"AverageUsersReportsController#average_number_of_workers" [label=average_number_of_workers]}
+"Среднесписочные 
+отклонения 
+между ЦФО 
+(по рапортам 
+проектного портала)" -> {"AverageUsersReportsController#project_cfos" [label=project_cfos]}
+"Среднесписочная 
+численность 
+работников 
+по ЦФО и локации 
+с учетом отклонений" -> {"AverageUsersReportsController#average_users" [label=average_users]}
 }
 
 
@@ -452,7 +563,7 @@ style=filled;
   fillcolor=darkkhaki;
   color=darkolivegreen;
   node [style=filled,color=gray10, fillcolor=white];
-"Шт. расписание" -> {"StaffItemController#index" [label=index]}
+"Шт-е расписание" -> {"StaffItemController#index" [label=index]}
 }
 
 
@@ -462,7 +573,9 @@ style=filled;
   fillcolor=darkkhaki;
   color=darkolivegreen;
   node [style=filled,color=gray10, fillcolor=white];
-"Штатная расстановка организации" -> {"division2d1Controller#list_of_staff_rasstanovka" [label=list_of_staff_rasstanovka]}
+"Штатная 
+расстановка 
+организации" -> {"division2d1Controller#list_of_staff_rasstanovka" [label=list_of_staff_rasstanovka]}
 }
 
 
@@ -472,8 +585,13 @@ style=filled;
   fillcolor=darkkhaki;
   color=darkolivegreen;
   node [style=filled,color=gray10, fillcolor=white];
-"Отчет по новым штатным единицам с заполненной з/п" -> {"StaffItemLogController#index" [label=index]}
-"Отчет по всем штатным единицам с заполненной з/п" -> {"StaffItemLogController#all" [label=all]}
+"Отчет 
+по новым 
+штатным единицам 
+с заполненной з/п" -> {"StaffItemLogController#index" [label=index]}
+"Отчет по всем 
+штатным единицам 
+с заполненной з/п" -> {"StaffItemLogController#all" [label=all]}
 }
 
 
@@ -494,9 +612,15 @@ style=filled;
   color=darkolivegreen;
   node [style=filled,color=gray10, fillcolor=white];
 "Ваши заявления" -> {"UserRequestController#index" [label=index]}
-"Заявления на отгул, переработку, выход из отпуска" -> {"UserRequestController#otgul_list" [label=otgul_list]}
-"Поданные заявления" -> {"UserRequestController#report" [label=report]}
-"Заявления для HR и Фин. отдела" -> {"UserRequestController#index" [label=index]}
+"Заявления 
+на отгул, 
+переработку, 
+выход из отпуска" -> {"UserRequestController#otgul_list" [label=otgul_list]}
+"Поданные 
+заявления" -> {"UserRequestController#report" [label=report]}
+"Заявления 
+для HR 
+и Фин. отдела" -> {"UserRequestController#index" [label=index]}
 "Заявления в АХО" -> {"UserRequestController#index" [label=index]}
 }
 
@@ -507,7 +631,8 @@ style=filled;
   fillcolor=darkkhaki;
   color=darkolivegreen;
   node [style=filled,color=gray10, fillcolor=white];
-"Создать протокол PR" -> {"PrProtocolController#new" [label=new]}
+"Создать 
+протокол PR" -> {"PrProtocolController#new" [label=new]}
 }
 
 
@@ -577,7 +702,8 @@ style=filled;
   fillcolor=darkkhaki;
   color=darkolivegreen;
   node [style=filled,color=gray10, fillcolor=white];
-"Служебные лестницы" -> {"WorkingTypeController#index" [label=index]}
+"Служебные 
+лестницы" -> {"WorkingTypeController#index" [label=index]}
 }
 
 
@@ -597,7 +723,8 @@ style=filled;
   fillcolor=darkkhaki;
   color=darkolivegreen;
   node [style=filled,color=gray10, fillcolor=white];
-"Коэффициенты стоимости часа" -> {"HourPriceCoefficientController#index" [label=index]}
+"Коэффициенты 
+стоимости часа" -> {"HourPriceCoefficientController#index" [label=index]}
 }
 
 
@@ -607,7 +734,8 @@ style=filled;
   fillcolor=darkkhaki;
   color=darkolivegreen;
   node [style=filled,color=gray10, fillcolor=white];
-"Вузы и факультеты" -> {"EducationController#index" [label=index]}
+"Вузы 
+и факультеты" -> {"EducationController#index" [label=index]}
 }
 
 
@@ -627,7 +755,8 @@ style=filled;
   fillcolor=darkkhaki;
   color=darkolivegreen;
   node [style=filled,color=gray10, fillcolor=white];
-"Причины отсутствия" -> {"TabelTypeController#index" [label=index]}
+"Причины 
+отсутствия" -> {"TabelTypeController#index" [label=index]}
 }
 
 
@@ -647,7 +776,8 @@ style=filled;
   fillcolor=darkkhaki;
   color=darkolivegreen;
   node [style=filled,color=gray10, fillcolor=white];
-"Основание прекращения" -> {"OsnPrekrController#index" [label=index]}
+"Основание 
+прекращения" -> {"OsnPrekrController#index" [label=index]}
 }
 
 
@@ -668,7 +798,8 @@ style=filled;
   color=darkolivegreen;
   node [style=filled,color=gray10, fillcolor=white];
 "Роли" -> {"RoleController#list" [label=list]}
-"Назначение ролей" -> {"RoleController#setup" [label=setup]}
+"Назначение 
+ролей" -> {"RoleController#setup" [label=setup]}
 }
 
 
@@ -688,7 +819,8 @@ style=filled;
   fillcolor=darkkhaki;
   color=darkolivegreen;
   node [style=filled,color=gray10, fillcolor=white];
-"Рассылки компаний" -> {"MailListController#index" [label=index]}
+"Рассылки 
+компаний" -> {"MailListController#index" [label=index]}
 }
 
 
@@ -708,7 +840,8 @@ style=filled;
   fillcolor=darkkhaki;
   color=darkolivegreen;
   node [style=filled,color=gray10, fillcolor=white];
-"Инф. системы компании" -> {"InfSystemsController#index" [label=index]}
+"Инф. системы 
+компании" -> {"InfSystemsController#index" [label=index]}
 }
 
 
@@ -728,7 +861,8 @@ style=filled;
   fillcolor=darkkhaki;
   color=darkolivegreen;
   node [style=filled,color=gray10, fillcolor=white];
-"Отделы по Юр. формам" -> {"Division2Controller#index" [label=index]}
+"Отделы 
+по Юр. формам" -> {"Division2Controller#index" [label=index]}
 }
 
 
@@ -748,7 +882,9 @@ style=filled;
   fillcolor=darkkhaki;
   color=darkolivegreen;
   node [style=filled,color=gray10, fillcolor=white];
-"Назначение сотрудников опций ИТ/АХО" -> {"ResOfOptsController#index" [label=index]}
+"Назначение 
+сотрудников 
+опций ИТ/АХО" -> {"ResOfOptsController#index" [label=index]}
 }
 
 
@@ -758,7 +894,10 @@ style=filled;
   fillcolor=darkkhaki;
   color=darkolivegreen;
   node [style=filled,color=gray10, fillcolor=white];
-"Назначение пользователей в рассылку напоминаний" -> {"EmailsForNotifyController#index" [label=index]}
+"Назначение 
+пользователей 
+в рассылку 
+напоминаний" -> {"EmailsForNotifyController#index" [label=index]}
 }
 
 
@@ -768,7 +907,8 @@ style=filled;
   fillcolor=darkkhaki;
   color=darkolivegreen;
   node [style=filled,color=gray10, fillcolor=white];
-"Закрытие табеля на изменение" -> {"CloseTabelController#index" [label=index]}
+"Закрытие табеля 
+на изменение" -> {"CloseTabelController#index" [label=index]}
 }
 
 }

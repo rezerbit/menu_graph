@@ -1,7 +1,5 @@
 require 'roo'
 require '~/projects/menu_graph/menu_tree.rb'
-require '~/projects/menu_graph/subgraph_tree.rb'
-
 
 # include 'MenuTree'
 
@@ -10,7 +8,6 @@ sheet = xlsx.sheet(0)
 
 rows = []
 sheet.each(name: 'Элемент меню', level: 'Уровень вложенности', controller: 'Controller', action: 'Action' ) do |hash|
-  hash[:name].gsub!("\n", '')
   rows << hash
 end
 
@@ -62,11 +59,11 @@ def create_text(menu)
   text = ''
   menu.childrens.each do |m|
     text += if m.childrens.empty? && m.level != 1
-              "  " * m.level.to_i + "\"#{m.name}\";\n"
+              "  " * m.level.to_i + "\"#{m.name}\" " + "[label=\"#{m.name}\"];\n"
             else
               "\n" +
               "  " * m.level.to_i + "subgraph cluster_#{m.id} {\n" +
-              "  " * m.level.to_i + '  ' + "label=\"#{m.name}\";\n" +
+              "  " * m.level.to_i + '  ' + "\"#{m.name}\" " + "[label=\"#{m.name}\"];\n" +
               create_text(m) +
               "  " * m.level.to_i + "}\n\n"
             end
@@ -102,13 +99,24 @@ def create_subgraph_controller(menu)
   menu.childrens.each do |m|
     text += if m.childrens.empty? && m.level != 1
               "  " * m.level.to_i + "\"#{m.name}\";\n"
+            elsif m.childrens.empty? && m.level == 1
+              "\n" +
+              "  " * m.level.to_i + "subgraph cluster_#{m.id} {\n" +
+              "  " * m.level.to_i + '  ' + "style=filled;\n" +
+              "  " * m.level.to_i + '  ' + "fillcolor=azure2;\n" +
+              "  " * m.level.to_i + '  ' + "color=azure4;\n" +
+              "  " * m.level.to_i + '  ' + "node [style=filled,color=gray10, fillcolor=white, shape=box];\n" +
+
+                  "  " * m.level.to_i + "\"#{m.name}\";\n" +
+              create_subgraph_controller(m) +
+              "  " * m.level.to_i + "}\n\n"
             else
               "\n" +
 
               "  " * m.level.to_i + "subgraph cluster_#{m.id} {\n" +
               "  " * m.level.to_i + '  ' + "style=filled;\n" +
               "  " * m.level.to_i + '  ' + "fillcolor=azure2;\n" +
-              "  " * m.level.to_i + '  ' + "olor=azure4;\n" +
+              "  " * m.level.to_i + '  ' + "color=azure4;\n" +
               "  " * m.level.to_i + '  ' + "node [style=filled,color=gray10, fillcolor=white, shape=box];\n" +
 
               "  " * m.level.to_i + '  ' + "label=\"#{m.name}\";\n" +
