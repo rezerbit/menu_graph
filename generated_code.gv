@@ -1,5 +1,7 @@
 digraph {
-rank=same;rankdir=RL; 
+rankdir=RL; 
+size="8.3,11.7!"; ratio=fill;
+node [height=0.02, width=1];
 
   subgraph cluster_1 {
     style=filled;

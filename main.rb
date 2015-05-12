@@ -131,7 +131,6 @@ end
 
 
 text = "digraph {\n" +
-       "rank=same;" +
       "rankdir=RL; \n"
 
 text += create_subgraph_controller(menu)
